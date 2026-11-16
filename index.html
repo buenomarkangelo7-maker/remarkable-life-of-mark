@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the reMARKable life of Mark – A Personal Digital Autobiography</title>
+    <meta
+      name="description"
+      content="Every picture holds a memory. Every experience tells a story. Every chapter reveals a part of me. Explore Mark's personal journey for Understanding the Self."
+    />
+    <meta name="author" content="Mark" />
+    <meta name="theme-color" content="#FAF7F2" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="the reMARKable life of Mark" />
+    <meta property="og:title" content="the reMARKable life of Mark – A Personal Digital Autobiography" />
+    <meta
+      property="og:description"
+      content="Every picture holds a memory. Every experience tells a story. Every chapter reveals a part of me."
+    />
+    <meta property="og:image" content="/src/assets/images/hero_mark_portrait_1794835743482.jpg" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="the reMARKable life of Mark – A Personal Digital Autobiography" />
+    <meta
+      name="twitter:description"
+      content="Every picture holds a memory. Every experience tells a story. Every chapter reveals a part of me."
+    />
+    <meta name="twitter:image" content="/src/assets/images/hero_mark_portrait_1794835743482.jpg" />
+
+    <!-- Editorial Typography: Cormorant Garamond + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "the reMARKable life of Mark",
+        "description": "A personal digital autobiography and reflection journal documenting identity, memories, and personal growth for Understanding the Self.",
+        "author": {
+          "@type": "Person",
+          "name": "Mark"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#FAF7F2] text-[#241B15] antialiased selection:bg-[#7C4A2D]/15 selection:text-[#241B15]">
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get('p');
+        if (p) {
+          var basePath = window.location.pathname.replace(/\/$/, '');
+          var cleanPath = p.charAt(0) === '/' ? p : '/' + p;
+          window.history.replaceState(null, '', basePath + cleanPath + window.location.hash);
+        }
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
